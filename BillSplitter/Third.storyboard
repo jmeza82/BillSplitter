@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Third View Controller-->
+        <scene sceneID="ft1-db-Hy0">
+            <objects>
+                <viewController storyboardIdentifier="help1" id="S24-Ll-jKg" customClass="ThirdViewController" customModule="BillSplitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ac-gI-Ke2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ye5-Uk-rrJ">
+                                <rect key="frame" x="16" y="114" width="343" height="381"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="381" id="mdX-Oj-wfN"/>
+                                </constraints>
+                                <string key="text">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPR-Dz-AnV">
+                                <rect key="frame" x="0.0" y="584" width="375" height="83"/>
+                                <color key="backgroundColor" red="0.15810667040000001" green="0.27960560499999998" blue="0.92869575780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="Sm6-Pf-dlf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="37"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.94870604439999995" green="0.98954622000000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How To Use App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAC-z4-5WD">
+                                <rect key="frame" x="16" y="33" width="343" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="sHA-at-zbV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daQ-rt-gLc">
+                                <rect key="frame" x="16" y="20" width="29" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="S24-Ll-jKg" eventType="touchUpInside" id="4NG-K9-wW0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gPR-Dz-AnV" firstAttribute="trailing" secondItem="q8l-Gr-lom" secondAttribute="trailing" id="Jpf-dB-w6w"/>
+                            <constraint firstItem="PAC-z4-5WD" firstAttribute="top" secondItem="q8l-Gr-lom" secondAttribute="top" constant="13" id="T3F-bf-l1l"/>
+                            <constraint firstItem="q8l-Gr-lom" firstAttribute="trailing" secondItem="ye5-Uk-rrJ" secondAttribute="trailing" constant="16" id="UQZ-Vb-aLz"/>
+                            <constraint firstItem="ye5-Uk-rrJ" firstAttribute="leading" secondItem="q8l-Gr-lom" secondAttribute="leading" constant="16" id="bTz-jN-Diw"/>
+                            <constraint firstItem="q8l-Gr-lom" firstAttribute="trailing" secondItem="PAC-z4-5WD" secondAttribute="trailing" constant="16" id="cb5-hC-lhx"/>
+                            <constraint firstItem="gPR-Dz-AnV" firstAttribute="leading" secondItem="q8l-Gr-lom" secondAttribute="leading" id="fET-gn-ONz"/>
+                            <constraint firstItem="ye5-Uk-rrJ" firstAttribute="top" secondItem="PAC-z4-5WD" secondAttribute="bottom" constant="20" id="iW0-PM-6z1"/>
+                            <constraint firstItem="gPR-Dz-AnV" firstAttribute="bottom" secondItem="q8l-Gr-lom" secondAttribute="bottom" id="lZj-mZ-Z1a"/>
+                            <constraint firstItem="PAC-z4-5WD" firstAttribute="leading" secondItem="q8l-Gr-lom" secondAttribute="leading" constant="16" id="ttl-na-9em"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q8l-Gr-lom"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qM7-oy-YcF">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="KAi-uN-ijM">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="close:" destination="S24-Ll-jKg" id="A7a-J2-KI7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ug3-kn-4z5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172" y="-466.41679160419795"/>
+        </scene>
+    </scenes>
+</document>
